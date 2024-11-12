@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazzy x Gvng</title>
+    <style>
+        /* Fondo de pantalla con GIF */
+        body {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background-image: url('https://media.discordapp.net/attachments/1290514544485203979/1298062141248766034/Scary.gif?ex=6733e193&is=67329013&hm=a8a5ad5b82c5d1eb841a05efb18730ab35558fd5a6d6d5346a605e8dc546b1e4&width=828&height=466&');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+            border: 2px solid #ff4d4d;
+            border-radius: 10px;
+            background-color: rgba(26, 26, 26, 0.8); /* Fondo semi-transparente */
+            box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+            z-index: 1;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .by-astra {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: gold;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #ff4d4d;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .image-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid #ff4d4d;
+            border-radius: 10px;
+            background-color: #1a1a1a;
+            width: 200px;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
+        .image-card p {
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Join Button */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .join-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .join-button:hover {
+            background-color: #e63939;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="by-astra">Nazzy x Gvng </span>
+            <h1>Nazzy x Gvng</h1>
+            <p>Unete a Nazzy Gvng Luego no llores....!</p>
+        </div>
+        
+        <div class="image-container">
+            <div class="image-card">
+                <img src="image.png" alt="Imagen 1">
+                <p>Nazzy$Admin</p>
+            </div>
+            <div class="image-card">
+                <img src="https://i.gifer.com/Eu6N.gif" alt="Imagen 2">
+                <p>[T]heCrow × NAZZY</p>
+            </div>
+            <div class="image-card">
+                <img src="Astrita.jpg" alt="Imagen 3">
+                <p>Astra Dev</p>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button class="join-button" onclick="window.location.href='https://discord.gg/nazzygvng'">Unirse al servidor</button>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astra</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos para el mensaje flotante */
+    .floating-message {
+      display: none;
+      position: fixed;
+      background-color: rgba(139, 0, 0, 0.8); /* Rojo oscuro */
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body oncontextmenu="showMessage(event); return false;">
+  <div class="profile-header">
+    <!-- Contenido de perfil aquí -->
+  </div>
+
+  <!-- Mensaje flotante -->
+  <div id="message" class="floating-message">Codigo fuente encriptado</div>
+
+  <script>
+    function showMessage(event) {
+      const message = document.getElementById('message');
+      
+      // Posicionar el mensaje en la posición del cursor
+      message.style.left = `${event.clientX}px`;
+      message.style.top = `${event.clientY}px`;
+      
+      // Mostrar el mensaje
+      message.style.display = 'block';
+      message.style.opacity = '1';
+
+      // Ocultar el mensaje después de 3 segundos
+      setTimeout(() => {
+        message.style.opacity = '0';
+        setTimeout(() => {
+          message.style.display = 'none';
+        }, 500); // Espera a que la transición de opacidad termine
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
